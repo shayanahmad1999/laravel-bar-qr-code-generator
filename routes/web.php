@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BarcodeController;
+use App\Http\Controllers\JsToastController;
 use App\Http\Controllers\QRCodeController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +25,6 @@ Route::prefix('qr-code')->controller(QRCodeController::class)->group(function ()
     Route::get('/sms', 'QRCodeSMS')->name('qr.code.sms');
     Route::get('/blade', 'QRCodeBladeTemplate')->name('qr.code.blade');
 });
+
+Route::get('/toast', [JsToastController::class,'viewPage'])->name('toast');
+Route::post('/store', [JsToastController::class,'store'])->name('toast.store');

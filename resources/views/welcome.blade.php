@@ -35,6 +35,14 @@
         <a href="{{ route('qr.code.phone') }}" class="btn btn-outline-warning mx-2 transition-all">QR Phone</a>
         <a href="{{ route('qr.code.sms') }}" class="btn btn-outline-danger mx-2 transition-all">QR SMS</a>
         <a href="{{ route('qr.code.blade') }}" class="btn btn-secondary mx-2 transition-all">QR Blade View</a>
+    
+        <hr class="my-4">
+
+        <h2 class="mb-4">📌 JS Toaster Actions</h2>
+
+        <a href="{{ route('toast') }}" class="btn btn-primary mx-2 transition-all">Show Toast</a>
+
+        <hr class="my-4">
     </div>
 
 </body>
